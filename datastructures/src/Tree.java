@@ -1,5 +1,4 @@
 //Binary Search Tree
-
 class BTree {
 	private int data;
 	private BTree parent;
@@ -59,24 +58,24 @@ class BTree {
 	
 	void remove(int a) {
 		if(this.data == a) {
-			//무자식
+			//if the node you want to be removed has no child.
 			if(this.left==null && this.right == null)
 				if(this.parent.left.data == a)
 					this.parent.left = null;
 				else this.parent.right = null;
-			//오른쪽자식 있을 경우
+			//if the node has a child on the right side.
 			else if(this.left==null)
 				if(this.parent.left.data==a)
 					this.parent.left=this.right;
 				else
 					this.parent.right=this.right;
-			//왼쪽자식
+			//if the node has a child on the left side.
 			else if(this.right==null)
 				if(this.parent.left.data==a)
 					this.parent.left=this.left;
 				else
 					this.parent.right=this.left;	
-			//자식 둘 
+			//if the node has children on both sides.
 			else {
 				BTree newTree = this.right;
 	
@@ -93,6 +92,8 @@ class BTree {
 				else if(newTree.parent != this)
 					newTree.parent.left = null;
 			}
+			
+			//call function recursively
 		}else if(a<this.data)
 			this.left.remove(a);
 		else this.right.remove(a);
@@ -120,18 +121,5 @@ class BTree {
 			this.right.preorder();
 		
 	}
-	/* Binary Search Tree
-
-	 * BTree() 루트노드 0인 Tree생성
-	 * BTree(int) 루트노드 초기화하는 생성자
-	 * 
-	 * void remove(int)
-	 * boolean has(int)
-	 * void insert(int)
-	 * 
-	 * void inorder() 중위순회 출력
-	 * void preorder() 전위순회 출력 
-	 
-	*/
 }
 

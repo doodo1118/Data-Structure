@@ -1,5 +1,5 @@
-
 public class LinkedList {
+	//head is dummy node which has meaningless data.
     private Node head;
     private Node tail;
     private Node cur;
@@ -7,11 +7,9 @@ public class LinkedList {
     private int size;
 	
     LinkedList(){
-    	
     	this.head = new Node("");
     	this.tail = this.head;
     	this.cur = this.head;
-    	
     }
     
     public class Node{
@@ -107,13 +105,10 @@ public class LinkedList {
     	cur = head;
     	
     	while(cur.data != o && cur.next != null){
-    		
     		cur = cur.next;
-    		
     	}
     	
     	return cur.data == o;
-    	
     }
     
     public String toString(){
