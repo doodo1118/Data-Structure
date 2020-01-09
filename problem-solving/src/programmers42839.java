@@ -34,14 +34,8 @@ public class programmers42839 {
 		
 		while( it.hasNext() ) {
 			candidateNumber = it.next();
-			for(int i=2; i*i<=candidateNumber; i++) {
-				if( candidateNumber%i==0 ) {
-					//candidateNumbers.remove(number);
-					noSosuCount++;
-					System.out.println( candidateNumber );
-					break;
-				}
-			}
+			if( !isPrime(candidateNumber) ) 
+				noSosuCount++;
 		}
 		
 		System.out.print( candidateNumbers.size() - noSosuCount);
@@ -59,5 +53,12 @@ public class programmers42839 {
 				isUsed[i] = false;
 			}
 		}
+	}
+	
+	public static boolean isPrime(int number) {
+		for(int i=2; i*i<=number; i++)
+			if( number%i==0 ) 
+				return false;
+		return true;
 	}
 }
