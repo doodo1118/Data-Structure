@@ -35,7 +35,7 @@ public class programmers42888 {
 		for(int i=0; i<recordLength; i++) {
 			String[] chunks = record[i].split(" ");
 
-			String command = chunks[0];	
+			String command = chunks[0];
 			if(command.equals("Change")) continue;
 			
 			String uid = chunks[1];
