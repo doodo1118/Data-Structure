@@ -14,6 +14,8 @@
         - 어린이 b가 짝이 있는지,
         - 어린이 a와 b가 친구사이인지, 
         - 만족하면 stack에 현재의 loop상태와 짝 상태를 저장
+  - 필요한 행과 열을 모두 탐색하면
+    - stack에서 상태를 꺼내 반복
   
 
 ### programmers [42888](https://programmers.co.kr/learn/courses/30/lessons/42888#)
