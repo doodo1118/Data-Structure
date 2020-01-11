@@ -1,17 +1,4 @@
-# Data-Structure
-Data Structure
-
-
-LinkedList
-
-Dequeue
-
-Circular LinkedList
-
-Queue
-
-Stack
-
-Tree
+# Problem Solving
+#### algospot [PICNIC](https://algospot.com/judge/problem/read/PICNIC)
 
 
