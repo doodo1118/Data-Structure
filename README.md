@@ -1,4 +1,10 @@
 # Problem Solving
+### programmers [60060](https://programmers.co.kr/learn/courses/30/lessons/60060#)
+\#trie \#트라이
+- 완전탐색시 queries.length \* 각 query 문자열의 길이 \* words.length만큼의 시간복잡도
+- words들의 중복되는 부분을 겹쳐놓기 위해 그래프 모양 생각
+
+
 ### algospot [PICNIC](https://algospot.com/judge/problem/read/PICNIC)
 \#dfs, \#stack
 - 한 방향으로 순회할 수 있도록 친구관계 정보를 정렬
