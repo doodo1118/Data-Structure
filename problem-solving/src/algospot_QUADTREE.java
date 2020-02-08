@@ -18,7 +18,6 @@ public class algospot_QUADTREE {
 		}
 	}
 	public static String getSorted() {
-		//chldnjsrnr ehdlf dkssorus
 		String[] childrens = new String[4];
 		childrens = getChildrens();
 		
